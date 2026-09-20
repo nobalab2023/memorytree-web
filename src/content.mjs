@@ -1,0 +1,83 @@
+export const content = {
+  ko: {
+    nav: ['앱 소개', '개인정보처리방침', '계정 삭제', '지원'],
+    skip: '본문 바로가기', language: '언어 선택', home: '홈',
+    title: 'Memory Tree — 나의 추억이 자라는 정원',
+    description: '사진 한 장, 짧은 메모, 소중한 하루. Memory Tree에서 나만의 추억을 나무와 정원으로 기록하세요. Android 출시 준비 중.',
+    eyebrow: '작은 순간을, 오래도록',
+    headline: '오늘의 추억이,<br>나만의 정원으로.',
+    intro: '사진 한 장에 마음을 담고, 짧은 메모로 하루를 기억해요. Memory Tree는 당신의 소중한 순간을 나무와 정원으로 기록하는 앱입니다.',
+    launch: 'Android 출시 준비 중',
+    learn: 'Memory Tree 알아보기', help: '문의하기',
+    illustration: 'Memory Tree 브랜드 일러스트',
+    detailsTitle: '기억하고 싶은 하루를 심어요.',
+    details: [
+      ['사진으로 남기고', '다시 보고 싶은 순간을 작은 폴라로이드로 담아 나무에 놓아보세요.'],
+      ['이야기를 더하고', '사진만으로 담지 못한 마음은 캡션과 메모로 간직하세요.'],
+      ['나의 정원으로', '한 해의 추억이 한 그루의 나무가 되어, 나만의 정원을 채웁니다.']
+    ],
+    quiet: '광고 없이, 디지털 상품 구매 없이.<br>기록하는 순간에 집중하세요.',
+    footer: '소중한 순간이 머무는 곳.',
+    company: 'NOVA LAB · 2023년 설립',
+    updated: '최종 업데이트: 2026년 9월 21일',
+    legalIntro: 'NOVA LAB · Memory Tree',
+    contactLabel: '공식 지원 이메일',
+    back: '앱 소개로 돌아가기',
+    notFound: '페이지를 찾을 수 없어요.',
+    notFoundText: '주소를 확인하거나 Memory Tree 홈으로 돌아가 주세요.'
+  },
+  en: {
+    nav: ['About', 'Privacy', 'Delete account', 'Support'],
+    skip: 'Skip to content', language: 'Choose language', home: 'Home',
+    title: 'Memory Tree — A garden of your memories',
+    description: 'A photo, a little note, a day worth keeping. Turn your personal memories into trees and a garden with Memory Tree. Preparing for launch on Android.',
+    eyebrow: 'Little moments, lasting memories',
+    headline: 'Your moments.<br>A garden of memories.',
+    intro: 'Keep a photo. Add a few words. Memory Tree is a place to turn your personal photos, notes, and everyday memories into trees and a garden of your own.',
+    launch: 'Preparing for launch on Android',
+    learn: 'Discover Memory Tree', help: 'Get in touch',
+    illustration: 'Memory Tree brand illustration',
+    detailsTitle: 'Plant a day worth remembering.',
+    details: [
+      ['Keep a photo', 'Place the moments you want to revisit on your tree as little Polaroids.'],
+      ['Add your story', 'Save the feelings beyond the photo with a caption and a personal note.'],
+      ['Grow your garden', 'A year of memories becomes a tree, and each tree becomes part of your garden.']
+    ],
+    quiet: 'No ads. No digital purchases.<br>Just space for your memories.',
+    footer: 'A little place for the moments that matter.',
+    company: 'NOVA LAB · Est. 2023',
+    updated: 'Last updated: September 21, 2026',
+    legalIntro: 'NOVA LAB · Memory Tree',
+    contactLabel: 'Official support email',
+    back: 'Back to Memory Tree',
+    notFound: 'This page could not be found.',
+    notFoundText: 'Check the address or return to the Memory Tree homepage.'
+  },
+  ja: {
+    nav: ['アプリ紹介', 'プライバシー', 'アカウント削除', 'サポート'],
+    skip: '本文へスキップ', language: '言語を選択', home: 'ホーム',
+    title: 'Memory Tree — 思い出が育つ、あなただけの庭',
+    description: '一枚の写真、短いメモ、大切な一日。Memory Treeは、個人の思い出を木と庭のかたちで残すアプリです。Android版リリース準備中。',
+    eyebrow: '小さな瞬間を、いつまでも',
+    headline: '今日の思い出が、<br>私だけの庭になる。',
+    intro: '写真に気持ちを込めて、短いメモで一日を残す。Memory Treeは、大切な写真やメモ、思い出を木と庭のかたちで記録するアプリです。',
+    launch: 'Android版 リリース準備中',
+    learn: 'Memory Treeについて', help: 'お問い合わせ',
+    illustration: 'Memory Tree ブランドイラスト',
+    detailsTitle: '覚えていたい一日を、庭に。',
+    details: [
+      ['写真を残す', 'また会いたい瞬間を小さなポラロイドにして、木に飾りましょう。'],
+      ['物語を添える', '写真だけでは伝えきれない気持ちは、キャプションとメモに。'],
+      ['私だけの庭へ', '一年の思い出が一本の木になり、あなただけの庭を彩ります。']
+    ],
+    quiet: '広告なし。デジタル商品の購入なし。<br>思い出を残す時間を大切に。',
+    footer: '大切な瞬間が、ここに。',
+    company: 'NOVA LAB · 2023年設立',
+    updated: '最終更新日：2026年9月21日',
+    legalIntro: 'NOVA LAB · Memory Tree',
+    contactLabel: '公式サポートメール',
+    back: 'アプリ紹介に戻る',
+    notFound: 'ページが見つかりませんでした。',
+    notFoundText: 'アドレスを確認するか、Memory Treeのホームに戻ってください。'
+  }
+};

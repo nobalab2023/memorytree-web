@@ -1,0 +1,11 @@
+node_modules/
+.firebase/
+.sites-runtime/
+.qa/
+*-debug.log
+.env*
+!.env.example
+*.key
+*.pem
+*.jks
+*service-account*.json
