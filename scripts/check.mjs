@@ -72,6 +72,7 @@ async function audit(directory) {
 await audit(dist);
 await stat(resolve(dist, '.nojekyll'));
 assert.equal(await readFile(resolve(dist, 'CNAME'), 'utf8'), 'memorytree-web.com\n');
+assert.equal(await readFile(resolve(dist, 'app-ads.txt'), 'utf8'), 'google.com, pub-4513599452056845, DIRECT, f08c47fec0942fa0\n');
 for (const obsolete of ['privacy.html', 'delete-account.html', 'support.html', 'en.html', 'ja.html']) {
   await assert.rejects(stat(resolve(dist, obsolete)), { code: 'ENOENT' });
 }

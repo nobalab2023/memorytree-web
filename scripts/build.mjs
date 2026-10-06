@@ -88,4 +88,5 @@ await writeFile(resolve(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-
 await writeFile(resolve(out, '.nojekyll'), '');
 // Kept as a portable declaration. Actions deployments use the Pages setting instead.
 await writeFile(resolve(out, 'CNAME'), 'memorytree-web.com\n');
+await writeFile(resolve(out, 'app-ads.txt'), 'google.com, pub-4513599452056845, DIRECT, f08c47fec0942fa0\n');
 console.log('Static pages generated in dist/ (no network calls).');
