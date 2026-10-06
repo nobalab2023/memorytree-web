@@ -78,7 +78,7 @@ for (const lang of locales) {
     const directory = resolve(out, route(lang, name).slice(1));
     await mkdir(directory, { recursive: true });
     const sections = page.sections.map(([heading, html], i) => `<section id="section-${i + 1}"><h2>${heading}</h2>${html}</section>`).join('\n');
-    const body = `<main id="main" class="document wrap"><div class="document-heading"><p class="eyebrow">${t.legalIntro}</p><h1>${page.title}</h1><p class="document-lead">${page.intro}</p><p class="updated">${t.updated}</p></div><div class="document-body">${page.callout ?? ''}${sections}<a class="back-link" href="${route(lang)}">← ${t.back}</a></div></main>`;
+    const body = `<main id="main" class="document wrap"><div class="document-heading"><p class="eyebrow">${t.legalIntro}</p><h1>${page.title}</h1><p class="document-lead">${page.intro}</p><p class="updated">${page.updated ?? t.updated}</p></div><div class="document-body">${page.callout ?? ''}${sections}<a class="back-link" href="${route(lang)}">← ${t.back}</a></div></main>`;
     await writeFile(resolve(directory, 'index.html'), shell(lang, name, `${page.title} | Memory Tree`, page.description, body));
   }
 }

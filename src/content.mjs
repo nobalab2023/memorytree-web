@@ -16,7 +16,7 @@ export const content = {
       ['이야기를 더하고', '사진만으로 담지 못한 마음은 캡션과 메모로 간직하세요.'],
       ['나의 정원으로', '한 해의 추억이 한 그루의 나무가 되어, 나만의 정원을 채웁니다.']
     ],
-    quiet: '광고 없이, 디지털 상품 구매 없이.<br>기록하는 순간에 집중하세요.',
+    quiet: '추가 사진은 선택형 보상형 광고로.<br>디지털 상품 구매는 제공하지 않습니다.',
     footer: '소중한 순간이 머무는 곳.',
     company: 'NOVA LAB · 2023년 설립',
     updated: '최종 업데이트: 2026년 9월 21일',
@@ -43,7 +43,7 @@ export const content = {
       ['Add your story', 'Save the feelings beyond the photo with a caption and a personal note.'],
       ['Grow your garden', 'A year of memories becomes a tree, and each tree becomes part of your garden.']
     ],
-    quiet: 'No ads. No digital purchases.<br>Just space for your memories.',
+    quiet: 'Optional rewarded ads for extra photos.<br>No digital purchases.',
     footer: 'A little place for the moments that matter.',
     company: 'NOVA LAB · Est. 2023',
     updated: 'Last updated: September 21, 2026',
@@ -70,7 +70,7 @@ export const content = {
       ['物語を添える', '写真だけでは伝えきれない気持ちは、キャプションとメモに。'],
       ['私だけの庭へ', '一年の思い出が一本の木になり、あなただけの庭を彩ります。']
     ],
-    quiet: '広告なし。デジタル商品の購入なし。<br>思い出を残す時間を大切に。',
+    quiet: '追加の写真には、任意のリワード広告を。<br>デジタル商品の購入はありません。',
     footer: '大切な瞬間が、ここに。',
     company: 'NOVA LAB · 2023年設立',
     updated: '最終更新日：2026年9月21日',
