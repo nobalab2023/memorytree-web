@@ -38,6 +38,14 @@ for (const lang of ['ko', 'en', 'ja']) {
     assert.ok(html.includes('mailto:memorytree.support@gmail.com'));
     assert.ok(!/<script|<form|<iframe/i.test(html), `${path}: public static page must not include form, tracker or backend`);
     assert.ok(!/TODO|lorem ipsum|YOUR_/i.test(html), `${path}: no placeholders in public content`);
+    if (name === '') {
+      const playLinks = [...html.matchAll(/<a\b[^>]*href="(https:\/\/play\.google\.com\/[^\"]+)"[^>]*>([^<]+)<\/a>/g)];
+      assert.equal(playLinks.length, 1, `${lang}: exactly one Google Play download button`);
+      assert.equal(playLinks[0][1], 'https://play.google.com/store/apps/details?id=com.novalab.memorytree', `${lang}: correct Memory Tree package`);
+      assert.equal(playLinks[0][2], content[lang].download, `${lang}: localized download label`);
+      assert.ok(!/출시 준비 중|Preparing for launch|リリース準備中/.test(html), `${lang}: remove obsolete launch status`);
+      assert.ok(html.includes('href="#about"'), `${lang}: keep app introduction link`);
+    }
     for (const match of html.matchAll(/(?:href|src)="([^"#]+)(?:#[^"]*)?"/g)) {
       const url = match[1];
       if (url.startsWith('/')) {

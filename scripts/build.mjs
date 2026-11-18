@@ -9,6 +9,7 @@ const root = fileURLToPath(new URL('..', import.meta.url));
 const out = resolve(root, 'dist');
 const origin = siteUrl;
 const email = 'memorytree.support@gmail.com';
+const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.novalab.memorytree';
 const locales = ['ko', 'en', 'ja'];
 const routeNames = ['', 'privacy', 'delete-account', 'support'];
 const esc = (value) => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
@@ -60,7 +61,7 @@ function home(lang) {
   const t = content[lang];
   return shell(lang, '', t.title, t.description, `<main id="main">
     <section class="hero wrap">
-      <div class="hero-copy"><p class="eyebrow">${t.eyebrow}</p><h1>${t.headline}</h1><p class="intro">${t.intro}</p><p class="launch">${t.launch}</p><div class="hero-actions"><a class="button" href="#about">${t.learn}<span aria-hidden="true">↓</span></a><a class="text-link" href="${route(lang, 'support')}">${t.help}</a></div></div>
+      <div class="hero-copy"><p class="eyebrow">${t.eyebrow}</p><h1>${t.headline}</h1><p class="intro">${t.intro}</p><p class="launch">${t.launch}</p><div class="hero-actions"><a class="button" href="${googlePlayUrl}">${t.download}</a><a class="text-link" href="#about">${t.learn}</a><a class="text-link" href="${route(lang, 'support')}">${t.help}</a></div></div>
       <figure class="hero-art"><div class="art-backdrop"><img src="/assets/memory-tree.png" width="1254" height="1254" alt="${t.illustration}" fetchpriority="high"></div><figcaption>${t.illustration}</figcaption></figure>
     </section>
     <section class="about wrap" id="about"><p class="eyebrow">MEMORY TREE</p><h2>${t.detailsTitle}</h2><div class="features">${t.details.map(([title, copy], i) => `<article><span class="feature-number">0${i + 1}</span><h3>${title}</h3><p>${copy}</p></article>`).join('')}</div></section>
